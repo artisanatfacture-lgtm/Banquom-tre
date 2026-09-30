@@ -1,6 +1,6 @@
 # Comparateur de banques en ligne
 
-Site statique en HTML, CSS et JavaScript vanilla, destiné à être publié gratuitement avec GitHub Pages. Le projet ne possède ni serveur, ni base de données, ni secret côté navigateur. Le dépôt est `artisanatfacture-lgtm/Banquom-tre` et l’URL Pages est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`.
+Site statique en HTML, CSS et JavaScript vanilla, destiné à être publié gratuitement avec GitHub Pages. Le projet ne possède ni serveur, ni base de données, ni secret côté navigateur. Le dépôt est `artisanatfacture-lgtm/Banquom-tre` et l’URL attendue après activation de Pages est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`.
 
 ## Architecture
 
@@ -49,7 +49,7 @@ Avant une publication, rechercher les liens cassés, les chemins absolus acciden
 
 ## URL publique, robots et sitemap
 
-Le dépôt et l’URL GitHub Pages sont confirmés : `https://github.com/artisanatfacture-lgtm/Banquom-tre` et `https://artisanatfacture-lgtm.github.io/Banquom-tre/`. Les fichiers SEO utilisent cette URL :
+Le dépôt est confirmé : `https://github.com/artisanatfacture-lgtm/Banquom-tre`. L’URL GitHub Pages attendue après activation est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`. Les fichiers SEO sont préparés pour cette URL :
 
 - `robots.txt` autorise l’exploration et référence le sitemap à cette adresse ;
 - `sitemap.xml` liste l’accueil, le comparatif, les quatre fiches et les mentions légales ;
@@ -69,7 +69,7 @@ Depuis la racine du dépôt, ouvrir `http://localhost:8000/`. Vérifier l’accu
 
 ## Déploiement GitHub Pages
 
-Le mode recommandé est GitHub Pages depuis la branche `main`, dossier racine (`/(root)`), sans étape de build. Pour ce dépôt, vérifier dans `Settings > Pages` que la branche `main` et le dossier `/(root)` sont sélectionnés, puis contrôler l’URL `https://artisanatfacture-lgtm.github.io/Banquom-tre/`. Le dépôt ne doit contenir aucun token, mot de passe ou identifiant privé.
+Le mode recommandé est GitHub Pages depuis la branche `main`, dossier racine (`/(root)`), sans étape de build. Pour activer Pages dans ce dépôt, ouvrir `Settings > Pages`, choisir `Deploy from a branch`, sélectionner `main` et `/(root)`, puis enregistrer. Attendre la publication et vérifier ensuite `https://artisanatfacture-lgtm.github.io/Banquom-tre/` ; cette URL n’est pas considérée comme publiée avant cette vérification. Le dépôt ne doit contenir aucun token, mot de passe ou identifiant privé.
 
 ## Maintenance par intervention
 
