@@ -1,0 +1,4 @@
+# URL GitHub Pages non confirmée : renseigner l'URL réelle avant publication.
+User-agent: *
+Allow: /
+Sitemap: https://artisanatfacture-lgtm.github.io/Banquom-tre/sitemap.xml
