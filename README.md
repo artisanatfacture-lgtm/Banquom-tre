@@ -1,6 +1,8 @@
 # Comparateur de banques en ligne
 
-Site statique en HTML, CSS et JavaScript vanilla, destiné à être publié gratuitement avec GitHub Pages. Le projet ne possède ni serveur, ni base de données, ni secret côté navigateur. Le dépôt est `artisanatfacture-lgtm/Banquom-tre` et l’URL attendue après activation de Pages est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`.
+Site statique avec rendu principal en HTML, CSS léger et JavaScript vanilla pour les interactions, publié gratuitement avec GitHub Pages. Le projet ne possède ni serveur, ni base de données, ni secret côté navigateur. Le dépôt est `artisanatfacture-lgtm/Banquom-tre` et l’URL publiée et vérifiée le 2026-10-01 est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`.
+
+Le nom public du site est **Banquomètre**. Les textes de comparaison restent factuels et peuvent mentionner les établissements comparés sans présenter le nom comme une promesse de résultat.
 
 ## Architecture
 
@@ -29,6 +31,12 @@ Toutes les valeurs comparées doivent être modifiées dans `js/banques.js`. Cha
 
 Les tarifs, conditions, frais et offres promotionnelles changent régulièrement. La date affichée indique la date de vérification, pas une garantie de validité future. Les sources officielles sont prioritaires sur les comparateurs tiers. Ne jamais inventer de tarif, de note, d’avis ou de statistique.
 
+## Aide par priorités et critères éditoriaux
+
+L’aide au choix doit partir d’une des cinq priorités proposées : voyage, compte à deux, carte virtuelle, revenus ou usage rare. Chaque recommandation doit expliquer le critère utilisé, citer les données visibles dans `js/banques.js` et distinguer clairement un fait sourcé d’une appréciation éditoriale. Une priorité ne constitue pas un classement universel et ne justifie pas de promesse commerciale.
+
+Les résumés « En bref » doivent répondre rapidement à la question du lecteur avec quelques chiffres essentiels, la date de vérification et la limite principale de l’offre. Lors d’une mise à jour, contrôler ensemble le résumé HTML de la fiche, l’entrée correspondante dans `js/banques.js`, le tableau comparatif et les sources officielles.
+
 ## Lien de parrainage
 
 Les variables globales `window.BOURSOBANK_REFERRAL_URL` et `window.BOURSOBANK_IS_REFERRAL_LINK` se trouvent dans `js/banques.js`. La valeur actuelle est l’URL officielle de la page Ultim et `window.BOURSOBANK_IS_REFERRAL_LINK` vaut `false` : cette URL n’est pas un lien de parrainage. Lorsque l’éditeur fournira son véritable lien, remplacer `window.BOURSOBANK_REFERRAL_URL` et passer `window.BOURSOBANK_IS_REFERRAL_LINK` à `true`. Le code ajoutera alors l’attribut `rel="sponsored"` aux liens concernés. Ne pas placer de secret dans ce fichier.
@@ -49,7 +57,7 @@ Avant une publication, rechercher les liens cassés, les chemins absolus acciden
 
 ## URL publique, robots et sitemap
 
-Le dépôt est confirmé : `https://github.com/artisanatfacture-lgtm/Banquom-tre`. L’URL GitHub Pages attendue après activation est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`. Les fichiers SEO sont préparés pour cette URL :
+Le dépôt est confirmé : `https://github.com/artisanatfacture-lgtm/Banquom-tre`. L’URL GitHub Pages publiée et vérifiée le 2026-10-01 est `https://artisanatfacture-lgtm.github.io/Banquom-tre/`. Les fichiers SEO utilisent cette URL :
 
 - `robots.txt` autorise l’exploration et référence le sitemap à cette adresse ;
 - `sitemap.xml` liste l’accueil, le comparatif, les quatre fiches et les mentions légales ;
@@ -69,7 +77,7 @@ Depuis la racine du dépôt, ouvrir `http://localhost:8000/`. Vérifier l’accu
 
 ## Déploiement GitHub Pages
 
-Le mode recommandé est GitHub Pages depuis la branche `main`, dossier racine (`/(root)`), sans étape de build. Pour activer Pages dans ce dépôt, ouvrir `Settings > Pages`, choisir `Deploy from a branch`, sélectionner `main` et `/(root)`, puis enregistrer. Attendre la publication et vérifier ensuite `https://artisanatfacture-lgtm.github.io/Banquom-tre/` ; cette URL n’est pas considérée comme publiée avant cette vérification. Le dépôt ne doit contenir aucun token, mot de passe ou identifiant privé.
+Le site est publié avec GitHub Pages depuis la branche `main`, dossier racine (`/(root)`), sans étape de build. Pour une maintenance du dépôt, conserver cette source de publication et vérifier après chaque changement `https://artisanatfacture-lgtm.github.io/Banquom-tre/`. Le dépôt ne doit contenir aucun token, mot de passe ou identifiant privé.
 
 ## Maintenance par intervention
 

@@ -4,7 +4,7 @@
  * volontairement indiquée « À vérifier ». Mettre à jour lastVerified et
  * sourceUrls en même temps que les données.
  */
-// Remplacer cette URL officielle par le lien de parrainage personnel avant publication.
+// Remplacer cette URL officielle lorsque le lien de parrainage personnel est fourni.
 window.BOURSOBANK_REFERRAL_URL = "https://www.boursobank.com/banque/carte-bancaire-gratuite-ultim";
 window.BOURSOBANK_IS_REFERRAL_LINK = false;
 
@@ -75,14 +75,15 @@ window.banques = [
     welcomeOffer: "À vérifier",
     travel: false,
     premium: false,
-    lastVerified: "2026-09-30",
+    lastVerified: "2026-10-01",
     featuredLabel: "",
     highlights: ["Aucune condition de revenus annoncée"],
-    limitations: ["Les tarifs Hello bank! changent le 1er octobre 2026 : à recontrôler"],
+    limitations: ["La carte virtuelle n’est pas incluse avec Hello One"],
     offerUrl: "https://www.hellobank.fr/fr/offre/compte-et-cartes/hello-one/",
     sourceUrls: [
       { label: "Page officielle Hello One", url: "https://www.hellobank.fr/fr/offre/compte-et-cartes/hello-one/" },
-      { label: "Tarifs Hello bank! (PDF)", url: "https://www.hellobank.fr/content/dam/hellobank/rsc/contrib/document/pdf/tarifs-hellobank.pdf" },
+      { label: "Brochure tarifaire complète Hello bank! (PDF)", url: "https://www.hellobank.fr/content/dam/hellobank/rsc/contrib/document/pdf/tarifs-hellobank.pdf" },
+      { label: "Addendum des conditions et tarifs Hello bank! (PDF)", url: "https://www.hellobank.fr/content/dam/hellobank/rsc/contrib/document/pdf/addendum-conditions-et-tarifs-hellobank.pdf" },
       { label: "FAQ carte virtuelle Hello One", url: "https://www.hellobank.fr/faq/puis-je-obtenir-une-carte-virtuelle-avec-l-offre-hello-one" }
     ]
   },
@@ -94,21 +95,20 @@ window.banques = [
     freeCondition: "1 paiement ou retrait par mois ; sinon 2 €/mois",
     incomeRequirement: "Aucune",
     foreignPayments: "1,95 % hors zone euro",
-    foreignWithdrawals: "1,95 % hors zone euro",
+    foreignWithdrawals: "Zone euro : 3 retraits gratuits puis 1 € ; hors zone euro : 1,95 %",
     virtualCard: true,
     jointAccount: "À vérifier",
     minDeposit: "Aucun",
     welcomeOffer: "À vérifier",
     travel: false,
     premium: false,
-    lastVerified: "2026-09-30",
+    lastVerified: "2026-10-01",
     featuredLabel: "",
     highlights: ["Aucune condition de revenus annoncée"],
     limitations: ["Des frais s’appliquent aux opérations hors zone euro"],
     offerUrl: "https://www.bforbank.com/compte-bancaire/carte-bancaire-bforbasic",
     sourceUrls: [
       { label: "Page officielle BforBASIC", url: "https://www.bforbank.com/compte-bancaire/carte-bancaire-bforbasic" },
-      { label: "Conditions tarifaires BforBank (PDF)", url: "https://bforbank.cdn.prismic.io/bforbank/5SgOkvNFaCOgDUsi_Conditions_tarifaires_BforBank_avantle27.10.pdf" },
       { label: "Ouverture de compte BforBank", url: "https://www.bforbank.com/compte-bancaire/ouvrir-compte-bancaire-en-ligne" }
     ]
   }
